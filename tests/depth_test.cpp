@@ -14,7 +14,7 @@ int main() {
     std::mt19937 gen(rd());
     std::uniform_real_distribution<double> price_dist(99.0, 101.0);
 
-    // Pre-generate all random values before the measured loop
+    // Pre-generate random update prices before the measured loop
     std::vector<double> prices(iterations);
 
     for (int i = 0; i < iterations; ++i) {
